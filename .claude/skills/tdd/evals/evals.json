@@ -1,0 +1,62 @@
+{
+  "skill_name": "tdd",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Using TDD, create a Python module `item_parser.py` with a function `parse_item(text: str) -> dict` that parses Atlantis item strings like '3 leaders [LEAD]' into {'name': 'leaders', 'abbr': 'LEAD', 'count': 3}. Also handle singular items like '1 sword [SWOR]'. Write tests first in `test_item_parser.py`, then implement. Use pytest. Work in the evals/files/ directory.",
+      "expected_output": "A test file and implementation file where tests pass",
+      "files": [],
+      "expectations": [
+        "A test file test_item_parser.py exists and contains at least 3 test functions or methods",
+        "An implementation file item_parser.py exists with a parse_item function",
+        "Tests were written before implementation (vertical slicing — not all tests at once)",
+        "Running 'pytest test_item_parser.py' in the output directory passes all tests",
+        "Tests use plain assert statements (not unittest.TestCase assertions)",
+        "Tests verify behavior through the public parse_item interface, not internal helpers",
+        "The parse_item function correctly parses '3 leaders [LEAD]' into {'name': 'leaders', 'abbr': 'LEAD', 'count': 3}"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Using TDD, add error handling to the item parser. Create `item_parser.py` with `parse_item(text: str) -> dict` that parses strings like '3 leaders [LEAD]' into {'name': 'leaders', 'abbr': 'LEAD', 'count': 3}. It should raise ValueError with a descriptive message for invalid inputs like empty strings, missing brackets, or non-numeric counts. Write tests first using pytest, use pytest.raises for error cases. Work in the evals/files/ directory.",
+      "expected_output": "Tests and implementation covering both happy path and error cases",
+      "files": [],
+      "expectations": [
+        "Tests use pytest.raises for expected ValueError cases",
+        "At least 2 error cases are tested (e.g., empty string, malformed input)",
+        "At least 2 happy-path cases are tested",
+        "Running 'pytest test_item_parser.py' passes all tests",
+        "Error messages are descriptive (not bare 'ValueError')",
+        "Tests are named after the behavior being tested, not the method name"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Using TDD, create a Python module `order_writer.py` with a function `write_orders(filepath, faction_id: int, unit_orders: dict[int, list[str]]) -> None` that writes an Atlantis orders file. The file should start with '#atlantis <faction_id>' and end with '#end'. Each unit block should be 'unit <unit_number>' followed by its orders. Use dependency injection for file writing so it's testable. Use pytest with tmp_path fixture. Work in the evals/files/ directory.",
+      "expected_output": "Tests and implementation for order file writing with DI and tmp_path",
+      "files": [],
+      "expectations": [
+        "Tests use the tmp_path fixture for file operations",
+        "The write_orders function accepts a file path parameter (dependency injection, not hardcoded path)",
+        "Output file starts with '#atlantis <faction_id>' header",
+        "Output file ends with '#end'",
+        "Running 'pytest test_order_writer.py' passes all tests",
+        "At least one test verifies the full file content structure with multiple units"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Using TDD, refactor the following code into a testable module. The current code reads a report file, extracts the faction name, and returns it. Create both the refactored module and tests. The original code is:\n\n```python\ndef get_faction_name(path):\n    with open(path) as f:\n        for line in f:\n            if line.startswith('Atlantis Report For:'):\n                next_line = next(f).strip()\n                name = next_line.split('(')[0].strip()\n                return name\n    return None\n```\n\nRefactor it to accept a string instead of a file path (making it testable without file I/O), write tests first, then implement. Use pytest. Work in the evals/files/ directory.",
+      "expected_output": "Refactored module with tests that don't require file I/O",
+      "files": [],
+      "expectations": [
+        "The refactored function accepts a string parameter instead of a file path",
+        "Tests do not create or read any files (no tmp_path, no open())",
+        "Tests pass inline report strings directly to the function",
+        "Running 'pytest' on the test file passes all tests",
+        "At least one test covers the case where the faction name is not found (returns None)",
+        "The function correctly extracts 'SuperBober' from a report containing 'SuperBober (14) (Martial 2, Magic 2)'"
+      ]
+    }
+  ]
+}

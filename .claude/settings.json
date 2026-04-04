@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(pip install *)",
+      "Bash(pip freeze *)",
+      "Bash(pytest *)",
+      "Bash(python -m pytest *)",
+      "Bash(source venv/bin/activate *)",
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(which *)",
+      "Read",
+      "Edit",
+      "Write"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(rm -rf *)",
+      "Bash(pip install --force *)"
+    ]
+  }
+}
