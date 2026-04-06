@@ -17,7 +17,7 @@ The report represents the state of the game, state of the world, at the end of e
 ### 1. Read current turn reports
 
 - Read current turn's report and game state using `report-parser` skill.
-- Your faction current turn reports are located in `players/faction_<number>/<turn-number>/report-<faction_number>` and `players/faction_<number>/<turn-number>/report-<faction_number>.json`. For example for player number 3, turn 0, you will look for `players/faction_3/0/report-3` and `players/faction_3/0/report-3.json` to read the report for turn 0.
+- Your faction current turn reports are located in `players/faction_<number>/<turn-number>/report.<faction_number>` and `players/faction_<number>/<turn-number>/report.<faction_number>.json`. For example for player number 3, turn 0, you will look for `players/faction_3/0/report.3` and `players/faction_3/0/report.3.json` to read the report for turn 0.
 - Use `report-parser` skill script to load and parse the report data into a structured format that you can easily query for unit statuses, resources, and other relevant information.
 
 
@@ -37,11 +37,13 @@ When generating orders, always ensure that they are consistent with both the fac
 
 After generating orders, output your goals and future plans in the faction plans file (`players/faction_<number>/faction_<number>_plans.md`) to keep track of your faction's evolving strategy and objectives.
 
+Use @tips.md for assroted tips about the playing the game.
+
 ### 4. Generate new orders
 
 - Load complete orders syntax reference from `orders-reference.md` to ensure that you are using correct syntax and parameters for each order type.
 - Identify what each unit can do based on the current turn report.
-- Check current turn orders template included in the report for the next turn and use it as a base for your orders, modifying it as needed based on the current game state, faction behavior rules, and faction plans and goals.
+- Check current turn orders template included in the report for the next turn. it is located in `players/faction_<number>/<turn-number>/orders_template.<faction_number>`. For example, for player number 3, turn 0, you will look for `players/faction_3/0/orders_template.3` to find the orders template file for turn 0. Copy this template and use it as a starting point for your orders file, filling in the orders for each unit based on their capabilities and your faction's strategy.
 - Create orders for each existing unit and new units based on the parser report, faction behavior rules, and faction plans and goals.
 - Orders file should be located in `players/faction_<number>/<turn-number>/orders.<faction_number>`. For example, for player number 3, turn 0, you will create `players/faction_3/0/orders.3` to submit orders for turn 0.
 
@@ -51,11 +53,37 @@ After generating orders, output your goals and future plans in the faction plans
 - Make sure that orders are valid for the unit (e.g. can't CAST if the unit doesn't have the spell, can't MOVE if overloaded, etc)
 - Check syntax for each order, no guessing
 
+
+#### Run checking orders to make sure orders do not have any errors
+
+Run:
+
+```bash
+/Users/art/dev/atlantis-game/atlantis-test-game/neworigins check /Users/art/dev/atlantis-game/atlantis-ai-player/<path-to-orders-file> /Users/art/dev/atlantis-game/atlantis-ai-player/<path-to-orders-file>.checked
+```
+
+For example, for player number 3, turn 0, you will run
+
+```bash
+/Users/art/dev/atlantis-game/atlantis-test-game/neworigins check players/faction_3/0/orders.3 /Users/art/dev/atlantis-game/atlantis-ai-player/players/faction_3/0/orders.3.checked
+```
+to check orders for turn 0.
+
+Read results of checking orders in `players/faction_<number>/<turn-number>/orders.<faction_number>.checked`. For example, for player number 3, turn 0, you will look for `players/faction_3/0/orders.3.checked` to read the results of checking orders for turn 0.
+
+After readding it, delete the .checked file and fix orders. Repeat this process until there are no errors in the .checked file. 
+
 ## Common pitfalls
 
 - Month-long mutual exclusivity is the #1 source of invalid orders - only 1 month order per unit.
 - MOVE and ADVANCE overwrite each other.
 - GIVE is executed before BUY.
+- You CAN move from Nexus using GATE spell, many factions prefer casting GATE instead of MOVE to exit Nexus, you make a decision.
+- To move from Nexus through Gateway structure, you need to order `MOVE <number of Gateway> IN`, just `ENTER` will not work.
+- When entering Nexus Gateway, randomize your decision what Gateway to enter, to avoid predictability.
+- ALL orders must be within context of the UNIT. This includes faction level orders like naming your faction, claiming silver, or changing faction type. For example, to name your faction, you need to order `NAME <faction name>` to one of your units, not just write it in the orders file without context of the unit.
+- Make sure `#atlantis <faction number>` is the first line in your orders file and alwaays has a faction password. Your faction passoword is always in the orders template file included in the report for the next turn. For example, for player number 3, you will look for `players/faction_3/<turn-number>/orders_template.3` to find your orders template file for the next turn, and use the faction password from that file in your orders file.
+- Once your faction name is set, never change it.
 
 ## Sub-files
 
