@@ -29,9 +29,12 @@ Pipeline: report parsing → game state analysis → strategy → order generati
 
 ## Important paths
 
-- `atlantis-core-engine/` - C/C++ core engine that runs the Atlantis game, only used for references
-- `client-examples/` - C++ GUI client (Atlantis-Little-Helper) that parses reports and generates orders; read-only reference for game mechanics
-- `game-examples/` - examples of multiple turns of the previously run Atlantis games
+- `strategies/` analyzed human strategies from previous games, can be used to find best strategy for current situation.
+- `players/` AI players, their turns, behavior, strategy, orders, turn reports.
+- `rules/` Atlantis rules wiki, everything about the game - what is is, how to play it, goals, rules.
+- `atlantis-core-engine/` - C/C++ core engine that runs the Atlantis game, only used for references.
+- `client-examples/` - C++ GUI client (Atlantis-Little-Helper) that parses reports and generates orders; read-only reference for game mechanics.
+- `game-examples/` - examples of multiple turns of the previously run Atlantis games.
 
 ## Game data format
 
