@@ -1,0 +1,73 @@
+#atlantis 4 "111"
+
+;*** swamp (30,8) in Taso ***
+
+unit 142
+;Seraphel the Unbound - FORC 2 complete, now studying FIRE toward level 2
+FACTION martial 1 magic 4
+CLAIM 200
+STUDY FIRE
+;
+; Create mage 2 - The Invoker
+FORM 5
+  NAME UNIT "Kael the Invoker"
+  DESCRIBE UNIT "Apprentice of the Covenant, seeker of arcane flame"
+  AVOID 1
+  BEHIND 1
+  CLAIM 850
+  BUY 1 LEAD
+  STUDY FORC
+END
+;
+; Create mage 3 - The Pale Scribe
+FORM 6
+  NAME UNIT "Morrith the Pale Scribe"
+  DESCRIBE UNIT "Chronicler of shadow and bone"
+  AVOID 1
+  BEHIND 1
+  CLAIM 850
+  BUY 1 LEAD
+  STUDY FORC
+END
+;
+; Create mage 4 - The Duskweaver
+FORM 7
+  NAME UNIT "Valdris the Duskweaver"
+  DESCRIBE UNIT "Weaver of twilight enchantments"
+  AVOID 1
+  BEHIND 1
+  CLAIM 850
+  BUY 1 LEAD
+  STUDY FORC
+END
+
+unit 178
+;Gravewatch - guarding and taxing (must include every turn)
+@GUARD 1
+@TAX
+
+;*** jungle (28,10) in Inddul ***
+
+unit 181
+;Veil Scout - dead end hex, redirecting SE to village
+CLAIM 20
+NOAID 1
+MOVE SE
+
+;*** jungle (29,11) in Inddul, contains Casbiandscor [village] ***
+
+unit 180
+;Dusk Scout - explored village, continuing south to desert
+CLAIM 20
+NOAID 1
+MOVE S
+
+;*** jungle (31,11) in Pelsanti ***
+
+unit 179
+;Shade Scout - continuing south, avoiding Hydra in Bog
+CLAIM 20
+NOAID 1
+MOVE S
+
+#end

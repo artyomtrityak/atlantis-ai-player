@@ -4,6 +4,8 @@ This is Faction 3 behavior rules explaining playstyle of the Faction 3.
 
 Follow those rules when making turns, for example if the faction is aggressive towards others, or prefers peace; likes to play trade faction or magic; etc.
 
+Always load `strategy.md` file to understand high-level strategy.
+
 ## Main playstyle
 
 The Faction 3 likes to create a military empire, build large economy, tax and produce in the regions, recruit military.

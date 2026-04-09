@@ -1,0 +1,64 @@
+#atlantis 3 "111"
+
+;*** forest (9,11) in Cehurst ***
+; Turn 3 strategy: ILLU 1 done! Study PHEN immediately (top priority).
+; Praesidium I activates GUARD+TAX for income. Deploy 2 new tax units
+; to Nafirth ($1,056 tax) and (8,12) ($901 tax). Scout Rimouth city.
+
+unit 141
+; Legatus (141) - ILLU 1 complete, study PHEN now!
+; Detect gates while studying (CAST is not month-long).
+CLAIM 500
+STUDY PHEN
+CAST gate_lore detect
+
+unit 175
+; Praesidium I - GUARD+TAX activates from last turn's TURN block
+@GUARD 1
+@TAX
+
+; --- Tax unit for Nafirth (9,9): 2,112 pop, $1,056 tax ---
+; Move N this turn, study COMB next turn, GUARD+TAX in turn 5 orders
+form 4
+  NAME unit "Praesidium II"
+  DESCRIBE unit "Tax garrison of the eternal legion"
+  CLAIM 500
+  BUY 5 CTAU
+  BEHIND 0
+  REVEAL NONE
+  MOVE N
+  turn
+    STUDY COMB
+  endturn
+end
+
+; --- Tax unit for forest (8,12): 2,146 pop, $901 tax ---
+; Move SW this turn, study COMB next turn, GUARD+TAX in turn 5 orders
+form 5
+  NAME unit "Praesidium III"
+  DESCRIBE unit "Tax garrison of the eternal legion"
+  CLAIM 500
+  BUY 5 CTAU
+  BEHIND 0
+  REVEAL NONE
+  MOVE SW
+  turn
+    STUDY COMB
+  endturn
+end
+
+;*** forest (9,9) in Nafirth ***
+
+unit 176
+; Explorator I - Continue scouting northwest into Benwhandab plains
+CLAIM 50
+MOVE NW
+
+;*** forest (8,12) in Cehurst ***
+
+unit 177
+; Explorator II - Scout Rimouth city! Critical intel for PHEN location.
+CLAIM 50
+MOVE SW
+
+#end

@@ -1,0 +1,93 @@
+#atlantis 3 "111"
+
+;*** Turn 5 strategy: Legatus arrives at Rimouth for massive PHEN income.
+;*** All 3 garrisons taxing. Scouts drop new garrisons as they move.
+;*** Phase 2 begins next turn once Legatus is stationed at Rimouth.
+
+;*** forest (8,12) in Cehurst ***
+
+unit 141
+; Legatus (141) - Cast PHEN at (8,12) ~$57, then march to Rimouth
+; Next turn at Rimouth: PHEN = $624/turn income + study FORC to level 2
+CLAIM 200
+CAST phantasmal_entertainment
+MOVE SW
+turn
+  ; Turn 6 at Rimouth: massive PHEN income + advance FORC to level 2
+  CLAIM 300
+  @CAST phantasmal_entertainment
+  STUDY FORC
+endturn
+
+unit 192
+; Praesidium III (192) - Guard and tax (8,12) forest
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (9,9) in Nafirth ***
+
+unit 191
+; Praesidium II (191) - Guard and tax Nafirth
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (9,11) in Cehurst ***
+
+unit 175
+; Praesidium I (175) - Guard and tax home region
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** plain (7,7) in Benwhandab ***
+
+unit 176
+; Explorator I (176) - Drop new garrison at (7,7), then scout SW to (6,8)
+; Gnolls cost $38 each: 5 gnolls = $190 + study $50 + maint $50 = $290
+CLAIM 300
+FORM 1
+  NAME UNIT "Praesidium IV"
+  DESCRIBE UNIT "Tax garrison of the eternal legion"
+  BUY 5 gnolls
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+END
+GIVE NEW 1 290 silver
+NOAID 1
+MOVE SW
+
+;*** plain (7,15) in Anhefom ***
+
+unit 177
+; Explorator II (177) - Drop new garrison at (7,15), then scout NW to (6,14)
+; Centaurs cost $74 each: 5 centaurs = $370 + study $50 + maint $50 = $470
+CLAIM 480
+FORM 1
+  NAME UNIT "Praesidium V"
+  DESCRIBE UNIT "Tax garrison of the eternal legion"
+  BUY 5 centaurs
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+END
+GIVE NEW 1 470 silver
+NOAID 1
+MOVE NW
+
+#end

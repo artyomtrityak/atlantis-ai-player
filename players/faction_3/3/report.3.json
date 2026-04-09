@@ -1,0 +1,1535 @@
+{
+  "administrative": {
+    "email": "NoAddress",
+    "password": "111",
+    "password_unset": false,
+    "show_unit_attitudes": false,
+    "times_sent": true
+  },
+  "attitudes": {
+    "ally": [],
+    "default": "neutral",
+    "friendly": [],
+    "hostile": [],
+    "neutral": [],
+    "unfriendly": [
+      {
+        "name": "Creatures",
+        "number": 2
+      }
+    ]
+  },
+  "date": {
+    "month": "April",
+    "year": 1
+  },
+  "engine": {
+    "json_report_version": "1.0.1 (beta)",
+    "ruleset": "NewOrigins",
+    "ruleset_version": "3.0.0 (beta)",
+    "version": "5.2.5 (beta)"
+  },
+  "errors": [
+    {
+      "message": "CAST 'gate lore': Skill level isn't that high.",
+      "unit": {
+        "name": "Legatus",
+        "number": 141
+      }
+    }
+  ],
+  "events": [
+    {
+      "category": "claim",
+      "message": "Claims $500.",
+      "unit": {
+        "name": "Legatus",
+        "number": 141
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $500.",
+      "unit": {
+        "name": "Praesidium II",
+        "number": 191
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $500.",
+      "unit": {
+        "name": "Praesidium III",
+        "number": 192
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $50.",
+      "unit": {
+        "name": "Explorator I",
+        "number": 176
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $50.",
+      "unit": {
+        "name": "Explorator II",
+        "number": 177
+      }
+    },
+    {
+      "category": "tax",
+      "message": "Collects $250 in taxes in forest (9,11) in Cehurst.",
+      "region": {
+        "coordinates": {
+          "label": "surface",
+          "x": 9,
+          "y": 11,
+          "z": 1
+        },
+        "province": "Cehurst",
+        "terrain": "forest"
+      },
+      "unit": {
+        "name": "Praesidium I",
+        "number": 175
+      }
+    },
+    {
+      "category": "buy",
+      "message": "Buys 5 centaurs [CTAU] at $68 each.",
+      "unit": {
+        "name": "Praesidium II",
+        "number": 191
+      }
+    },
+    {
+      "category": "buy",
+      "message": "Buys 5 centaurs [CTAU] at $68 each.",
+      "unit": {
+        "name": "Praesidium III",
+        "number": 192
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Rides from forest (9,9) in Nafirth to plain (8,8) in Benwhandab.",
+      "unit": {
+        "name": "Explorator I",
+        "number": 176
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Rides from forest (9,11) in Cehurst to forest (9,9) in Nafirth.",
+      "unit": {
+        "name": "Praesidium II",
+        "number": 191
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Rides from forest (9,11) in Cehurst to forest (8,12) in Cehurst.",
+      "unit": {
+        "name": "Praesidium III",
+        "number": 192
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Rides from forest (8,12) in Cehurst to forest (7,13) in Cehurst.",
+      "unit": {
+        "name": "Explorator II",
+        "number": 177
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies phantasmal entertainment at a cost of 100 silver [SILV].",
+      "unit": {
+        "name": "Legatus",
+        "number": 141
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 10 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Explorator I",
+        "number": 176
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Praesidium II",
+        "number": 191
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Legatus",
+        "number": 141
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Praesidium I",
+        "number": 175
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Praesidium III",
+        "number": 192
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 10 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Explorator II",
+        "number": 177
+      }
+    }
+  ],
+  "item_reports": [],
+  "name": "AI_faction_1",
+  "number": 3,
+  "object_reports": [],
+  "regions": [
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 8,
+        "y": 8,
+        "z": 1
+      },
+      "entertainment": 51,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 6,
+              "z": 1
+            },
+            "province": "Benwhandab",
+            "terrain": "plain"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 7,
+              "z": 1
+            },
+            "province": "Benwhandab",
+            "terrain": "plain"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Nafirth",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "settlement": {
+              "name": "Bosse",
+              "size": "town"
+            },
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 7,
+              "z": 1
+            },
+            "province": "Benwhandab",
+            "terrain": "plain"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 80,
+            "name": "centaur",
+            "plural": "centaurs",
+            "price": 67,
+            "tag": "CTAU"
+          },
+          {
+            "amount": 16,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 677,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 2007,
+        "race": "centaurs"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 40,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 20,
+          "name": "horse",
+          "plural": "horses",
+          "tag": "HORS"
+        }
+      ],
+      "province": "Benwhandab",
+      "tax": 842,
+      "terrain": "plain",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 70,
+            "swimming": 0,
+            "walking": 70
+          },
+          "description": "Scout of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "centaur",
+              "plural": "centaurs",
+              "tag": "CTAU"
+            },
+            {
+              "amount": 62,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Explorator I",
+          "number": 176,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 50
+        }
+      ],
+      "wages": {
+        "amount": 12.1,
+        "max": 351
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 9,
+        "y": 9,
+        "z": 1
+      },
+      "entertainment": 62,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 7,
+              "z": 1
+            },
+            "province": "Benwhandab",
+            "terrain": "plain"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 10,
+              "y": 8,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 10,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "settlement": {
+              "name": "Bosse",
+              "size": "town"
+            },
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 8,
+              "z": 1
+            },
+            "province": "Benwhandab",
+            "terrain": "plain"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 84,
+            "name": "wood elf",
+            "plural": "wood elves",
+            "price": 40,
+            "tag": "WELF"
+          },
+          {
+            "amount": 16,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 700,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 2103,
+        "race": "wood elves"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 20,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Nafirth",
+      "tax": 1051,
+      "terrain": "forest",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 350,
+            "swimming": 0,
+            "walking": 350
+          },
+          "description": "Tax garrison of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": false,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "centaur",
+              "plural": "centaurs",
+              "tag": "CTAU"
+            },
+            {
+              "amount": 110,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Praesidium II",
+          "number": 191,
+          "orders": [
+            {
+              "order": "STUDY COMB"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 250
+        }
+      ],
+      "wages": {
+        "amount": 12.5,
+        "max": 433
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 9,
+        "y": 11,
+        "z": 1
+      },
+      "entertainment": 42,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Nafirth",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 10,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 10,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "settlement": {
+              "name": "Bosse",
+              "size": "town"
+            },
+            "terrain": "forest"
+          }
+        }
+      ],
+      "gate": {
+        "number": 54,
+        "open": 1
+      },
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 66,
+            "name": "centaur",
+            "plural": "centaurs",
+            "price": 68,
+            "tag": "CTAU"
+          },
+          {
+            "amount": 13,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 688,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 1663,
+        "race": "centaurs"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 20,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Cehurst",
+      "tax": 764,
+      "terrain": "forest",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 15
+          },
+          "combat_spell": {
+            "name": "fire",
+            "tag": "FIRE"
+          },
+          "description": "Legate of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": false,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 1550,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Legatus",
+          "number": 141,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "can_study": [
+              {
+                "name": "earthquake",
+                "tag": "EQUA"
+              },
+              {
+                "name": "force shield",
+                "tag": "FSHI"
+              },
+              {
+                "name": "energy shield",
+                "tag": "ESHI"
+              },
+              {
+                "name": "spirit shield",
+                "tag": "SSHI"
+              },
+              {
+                "name": "magical healing",
+                "tag": "MHEA"
+              },
+              {
+                "name": "farsight",
+                "tag": "FARS"
+              },
+              {
+                "name": "mind reading",
+                "tag": "MIND"
+              },
+              {
+                "name": "weather lore",
+                "tag": "WEAT"
+              },
+              {
+                "name": "earth lore",
+                "tag": "EART"
+              },
+              {
+                "name": "necromancy",
+                "tag": "NECR"
+              },
+              {
+                "name": "demon lore",
+                "tag": "DEMO"
+              },
+              {
+                "name": "create phantasmal beasts",
+                "tag": "PHBE"
+              },
+              {
+                "name": "create phantasmal demons",
+                "tag": "PHDE"
+              },
+              {
+                "name": "dispel illusions",
+                "tag": "DISP"
+              },
+              {
+                "name": "artifact lore",
+                "tag": "ARTI"
+              }
+            ],
+            "known": [
+              {
+                "level": 1,
+                "name": "observation",
+                "skill_days": 30,
+                "tag": "OBSE"
+              },
+              {
+                "level": 1,
+                "name": "force",
+                "skill_days": 60,
+                "tag": "FORC"
+              },
+              {
+                "level": 1,
+                "name": "pattern",
+                "skill_days": 35,
+                "tag": "PATT"
+              },
+              {
+                "level": 1,
+                "name": "spirit",
+                "skill_days": 30,
+                "tag": "SPIR"
+              },
+              {
+                "level": 1,
+                "name": "gate lore",
+                "skill_days": 30,
+                "tag": "GATE"
+              },
+              {
+                "level": 1,
+                "name": "fire",
+                "skill_days": 30,
+                "tag": "FIRE"
+              },
+              {
+                "level": 3,
+                "name": "combat",
+                "skill_days": 180,
+                "tag": "COMB"
+              },
+              {
+                "level": 1,
+                "name": "illusion",
+                "skill_days": 30,
+                "tag": "ILLU"
+              },
+              {
+                "level": 1,
+                "name": "phantasmal entertainment",
+                "skill_days": 30,
+                "tag": "PHEN"
+              }
+            ]
+          },
+          "weight": 10
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 350,
+            "swimming": 0,
+            "walking": 350
+          },
+          "description": "Tax garrison of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": false,
+            "guard": true,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "centaur",
+              "plural": "centaurs",
+              "tag": "CTAU"
+            },
+            {
+              "amount": 260,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Praesidium I",
+          "number": 175,
+          "orders": [
+            {
+              "order": "@GUARD 1"
+            },
+            {
+              "order": "@TAX"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": [
+              {
+                "level": 1,
+                "name": "combat",
+                "skill_days": 30,
+                "tag": "COMB"
+              }
+            ]
+          },
+          "weight": 250
+        }
+      ],
+      "wages": {
+        "amount": 12.3,
+        "max": 330
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 8,
+        "y": 12,
+        "z": 1
+      },
+      "entertainment": 56,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "settlement": {
+              "name": "Bosse",
+              "size": "town"
+            },
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 9,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "settlement": {
+              "name": "Rimouth",
+              "size": "city"
+            },
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 86,
+            "name": "wood elf",
+            "plural": "wood elves",
+            "price": 38,
+            "tag": "WELF"
+          },
+          {
+            "amount": 17,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 677,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 2159,
+        "race": "wood elves"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 20,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Cehurst",
+      "tax": 906,
+      "terrain": "forest",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 350,
+            "swimming": 0,
+            "walking": 350
+          },
+          "description": "Tax garrison of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": false,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "centaur",
+              "plural": "centaurs",
+              "tag": "CTAU"
+            },
+            {
+              "amount": 110,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Praesidium III",
+          "number": 192,
+          "orders": [
+            {
+              "order": "STUDY COMB"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 250
+        }
+      ],
+      "wages": {
+        "amount": 12.1,
+        "max": 372
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 7,
+        "y": 13,
+        "z": 1
+      },
+      "entertainment": 624,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 8,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 7,
+              "y": 15,
+              "z": 1
+            },
+            "province": "Anhefom",
+            "terrain": "plain"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 6,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Punscepbliss",
+            "terrain": "mountain"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 6,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Cehurst",
+            "terrain": "forest"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 41,
+            "name": "wood",
+            "plural": "wood",
+            "price": 58,
+            "tag": "WOOD"
+          },
+          {
+            "amount": 48,
+            "name": "wine",
+            "plural": "wine",
+            "price": 113,
+            "tag": "WINE"
+          },
+          {
+            "amount": 61,
+            "name": "truffles",
+            "plural": "truffles",
+            "price": 79,
+            "tag": "TRUF"
+          },
+          {
+            "amount": 430,
+            "name": "centaur",
+            "plural": "centaurs",
+            "price": 82,
+            "tag": "CTAU"
+          },
+          {
+            "amount": 86,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 828,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": [
+          {
+            "amount": 100,
+            "name": "grain",
+            "plural": "grain",
+            "price": 23,
+            "tag": "GRAI"
+          },
+          {
+            "amount": 106,
+            "name": "livestock",
+            "plural": "livestock",
+            "price": 25,
+            "tag": "LIVE"
+          },
+          {
+            "amount": 166,
+            "name": "fish",
+            "plural": "fish",
+            "price": 53,
+            "tag": "FISH"
+          },
+          {
+            "amount": 25,
+            "name": "plate armor",
+            "plural": "plate armor",
+            "price": 445,
+            "tag": "PARM"
+          },
+          {
+            "amount": 20,
+            "name": "lasso",
+            "plural": "lassoes",
+            "price": 95,
+            "tag": "LASS"
+          },
+          {
+            "amount": 20,
+            "name": "sword",
+            "plural": "swords",
+            "price": 85,
+            "tag": "SWOR"
+          },
+          {
+            "amount": 31,
+            "name": "hammer",
+            "plural": "hammers",
+            "price": 87,
+            "tag": "HAMM"
+          },
+          {
+            "amount": 44,
+            "name": "vodka",
+            "plural": "vodka",
+            "price": 252,
+            "tag": "VODK"
+          },
+          {
+            "amount": 63,
+            "name": "silk",
+            "plural": "silk",
+            "price": 202,
+            "tag": "SILK"
+          }
+        ]
+      },
+      "population": {
+        "amount": 10765,
+        "race": "centaurs"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 20,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Cehurst",
+      "settlement": {
+        "name": "Rimouth",
+        "size": "city"
+      },
+      "tax": 10334,
+      "terrain": "forest",
+      "units": [
+        {
+          "attitude": "neutral",
+          "faction": {
+            "name": "The Guardsmen",
+            "number": 1
+          },
+          "flags": {
+            "avoid": false,
+            "guard": true
+          },
+          "items": [
+            {
+              "amount": 120,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 120,
+              "name": "sword",
+              "plural": "swords",
+              "tag": "SWOR"
+            }
+          ],
+          "name": "City Guard",
+          "number": 10
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 70,
+            "swimming": 0,
+            "walking": 70
+          },
+          "description": "Scout of the eternal legion",
+          "faction": {
+            "name": "AI_faction_1",
+            "number": 3
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "centaur",
+              "plural": "centaurs",
+              "tag": "CTAU"
+            },
+            {
+              "amount": 62,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Explorator II",
+          "number": 177,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 50
+        }
+      ],
+      "wages": {
+        "amount": 14.8,
+        "max": 2066
+      }
+    }
+  ],
+  "skill_reports": [
+    {
+      "description": "A mage with the Phantasmal Entertainment skill may use his powers of Illusion to earn money by creating illusionary fireworks, puppet shows, etc. In effect, Phantasmal Entertainment grants the mage Entertainment skill equal to 600 silver times his Phantasmal Entertainment level. To use this skill, the mage should CAST Phantasmal_Entertainment. This skill requires illusion [ILLU] 1 to begin to study. This skill costs 100 silver per month of study.",
+      "level": 1,
+      "name": "phantasmal entertainment",
+      "tag": "PHEN"
+    }
+  ],
+  "statistics": [
+    {
+      "amount": 1,
+      "max": 1,
+      "name": "leader",
+      "plural": "leaders",
+      "rank": 1,
+      "tag": "LEAD",
+      "total": 2
+    },
+    {
+      "amount": 17,
+      "max": 17,
+      "name": "centaur",
+      "plural": "centaurs",
+      "rank": 1,
+      "tag": "CTAU",
+      "total": 17
+    },
+    {
+      "amount": 2154,
+      "max": 2154,
+      "name": "silver",
+      "plural": "silver",
+      "rank": 1,
+      "tag": "SILV",
+      "total": 2912
+    }
+  ],
+  "status": {
+    "apprentices": {
+      "allowed": 3,
+      "current": 0,
+      "name": "Apprentice"
+    },
+    "mages": {
+      "allowed": 2,
+      "current": 1
+    },
+    "quartermasters": {
+      "allowed": 2,
+      "current": 0
+    },
+    "regions": {
+      "allowed": 10,
+      "current": 1
+    }
+  },
+  "type": {
+    "magic": 1,
+    "martial": 1
+  },
+  "unclaimed_silver": 6450
+}

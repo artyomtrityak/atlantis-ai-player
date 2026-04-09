@@ -1,0 +1,2362 @@
+{
+  "administrative": {
+    "email": "NoAddress",
+    "password": "111",
+    "password_unset": false,
+    "show_unit_attitudes": false,
+    "times_sent": true
+  },
+  "attitudes": {
+    "ally": [],
+    "default": "neutral",
+    "friendly": [],
+    "hostile": [],
+    "neutral": [],
+    "unfriendly": [
+      {
+        "name": "Creatures",
+        "number": 2
+      }
+    ]
+  },
+  "date": {
+    "month": "June",
+    "year": 1
+  },
+  "engine": {
+    "json_report_version": "1.0.1 (beta)",
+    "ruleset": "NewOrigins",
+    "ruleset_version": "3.0.0 (beta)",
+    "version": "5.2.5 (beta)"
+  },
+  "events": [
+    {
+      "category": "claim",
+      "message": "Claims $200.",
+      "unit": {
+        "name": "Seraphel the Unbound",
+        "number": 142
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $150.",
+      "unit": {
+        "name": "Kael the Invoker",
+        "number": 200
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $150.",
+      "unit": {
+        "name": "Morrith the Pale Scribe",
+        "number": 201
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $150.",
+      "unit": {
+        "name": "Valdris the Duskweaver",
+        "number": 202
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $300.",
+      "unit": {
+        "name": "Casbiandscor Watch",
+        "number": 209
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $20.",
+      "unit": {
+        "name": "Veil Scout",
+        "number": 181
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $300.",
+      "unit": {
+        "name": "Awow Outpost",
+        "number": 210
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $20.",
+      "unit": {
+        "name": "Dusk Scout",
+        "number": 180
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $300.",
+      "unit": {
+        "name": "Pelsanti Vanguard",
+        "number": 211
+      }
+    },
+    {
+      "category": "claim",
+      "message": "Claims $20.",
+      "unit": {
+        "name": "Shade Scout",
+        "number": 179
+      }
+    },
+    {
+      "category": "tax",
+      "message": "Collects $250 in taxes in swamp (30,8) in Taso.",
+      "region": {
+        "coordinates": {
+          "label": "surface",
+          "x": 30,
+          "y": 8,
+          "z": 1
+        },
+        "province": "Taso",
+        "terrain": "swamp"
+      },
+      "unit": {
+        "name": "Gravewatch",
+        "number": 178
+      }
+    },
+    {
+      "category": "buy",
+      "message": "Buys 5 gnomes [GNOM] at $27 each.",
+      "unit": {
+        "name": "Casbiandscor Watch",
+        "number": 209
+      }
+    },
+    {
+      "category": "buy",
+      "message": "Buys 5 goblins [GBLN] at $29 each.",
+      "unit": {
+        "name": "Awow Outpost",
+        "number": 210
+      }
+    },
+    {
+      "category": "buy",
+      "message": "Buys 5 gnomes [GNOM] at $29 each.",
+      "unit": {
+        "name": "Pelsanti Vanguard",
+        "number": 211
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Walks from jungle (29,11) in Inddul to desert (30,12) in Awow.",
+      "unit": {
+        "name": "Veil Scout",
+        "number": 181
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Walks from desert (29,13) in Awow to desert (29,15) in Awow.",
+      "unit": {
+        "name": "Dusk Scout",
+        "number": 180
+      }
+    },
+    {
+      "category": "movement",
+      "message": "Walks from jungle (31,13) in Pelsanti to jungle (31,15) in Pelsanti.",
+      "unit": {
+        "name": "Shade Scout",
+        "number": 179
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies fire at a cost of 100 silver [SILV].",
+      "unit": {
+        "name": "Seraphel the Unbound",
+        "number": 142
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies force at a cost of 100 silver [SILV].",
+      "unit": {
+        "name": "Kael the Invoker",
+        "number": 200
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies force at a cost of 100 silver [SILV].",
+      "unit": {
+        "name": "Morrith the Pale Scribe",
+        "number": 201
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies force at a cost of 100 silver [SILV].",
+      "unit": {
+        "name": "Valdris the Duskweaver",
+        "number": 202
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies combat at a cost of 50 silver [SILV].",
+      "unit": {
+        "name": "Casbiandscor Watch",
+        "number": 209
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies combat at a cost of 50 silver [SILV].",
+      "unit": {
+        "name": "Awow Outpost",
+        "number": 210
+      }
+    },
+    {
+      "category": "study",
+      "message": "Studies combat at a cost of 50 silver [SILV].",
+      "unit": {
+        "name": "Pelsanti Vanguard",
+        "number": 211
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Seraphel the Unbound",
+        "number": 142
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Gravewatch",
+        "number": 178
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Kael the Invoker",
+        "number": 200
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Morrith the Pale Scribe",
+        "number": 201
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Valdris the Duskweaver",
+        "number": 202
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Casbiandscor Watch",
+        "number": 209
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 10 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Veil Scout",
+        "number": 181
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Awow Outpost",
+        "number": 210
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 50 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Pelsanti Vanguard",
+        "number": 211
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 10 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Dusk Scout",
+        "number": 180
+      }
+    },
+    {
+      "category": "maintenance",
+      "message": "Consumes 10 silver [SILV] for maintenance.",
+      "unit": {
+        "name": "Shade Scout",
+        "number": 179
+      }
+    }
+  ],
+  "item_reports": [
+    {
+      "description": "gnome [GNOM], weight 5, walking capacity 2, moves 2 hexes per month. This race may study herb lore [HERB], quarrying [QUAR], entertainment [ENTE], crossbow [XBOW] and healing [HEAL] to level 5 and all other skills to level 2.",
+      "name": "gnome",
+      "tag": "GNOM"
+    }
+  ],
+  "name": "The Covenant of Shadows",
+  "number": 4,
+  "object_reports": [],
+  "regions": [
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 30,
+        "y": 8,
+        "z": 1
+      },
+      "entertainment": 36,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 6,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 7,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Taso",
+            "terrain": "swamp"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Sebe",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Bangygas",
+            "terrain": "mountain"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 7,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        }
+      ],
+      "gate": {
+        "number": 2,
+        "open": 1
+      },
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 62,
+            "name": "goblin",
+            "plural": "goblins",
+            "price": 29,
+            "tag": "GBLN"
+          },
+          {
+            "amount": 12,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 677,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 1557,
+        "race": "goblins"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 10,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 10,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 10,
+          "name": "herb",
+          "plural": "herbs",
+          "tag": "HERB"
+        }
+      ],
+      "province": "Taso",
+      "tax": 653,
+      "terrain": "swamp",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 15
+          },
+          "combat_spell": {
+            "name": "fire",
+            "tag": "FIRE"
+          },
+          "description": "Arcane wanderer, keeper of forgotten rites",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 650,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Seraphel the Unbound",
+          "number": 142,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "can_study": [
+              {
+                "name": "earthquake",
+                "tag": "EQUA"
+              },
+              {
+                "name": "force shield",
+                "tag": "FSHI"
+              },
+              {
+                "name": "energy shield",
+                "tag": "ESHI"
+              },
+              {
+                "name": "spirit shield",
+                "tag": "SSHI"
+              },
+              {
+                "name": "magical healing",
+                "tag": "MHEA"
+              },
+              {
+                "name": "farsight",
+                "tag": "FARS"
+              },
+              {
+                "name": "mind reading",
+                "tag": "MIND"
+              },
+              {
+                "name": "weather lore",
+                "tag": "WEAT"
+              },
+              {
+                "name": "earth lore",
+                "tag": "EART"
+              },
+              {
+                "name": "summon skeletons",
+                "tag": "SUSK"
+              },
+              {
+                "name": "create aura of fear",
+                "tag": "FEAR"
+              },
+              {
+                "name": "banish undead",
+                "tag": "BUND"
+              },
+              {
+                "name": "demon lore",
+                "tag": "DEMO"
+              },
+              {
+                "name": "illusion",
+                "tag": "ILLU"
+              },
+              {
+                "name": "artifact lore",
+                "tag": "ARTI"
+              }
+            ],
+            "known": [
+              {
+                "level": 1,
+                "name": "observation",
+                "skill_days": 35,
+                "tag": "OBSE"
+              },
+              {
+                "level": 2,
+                "name": "force",
+                "skill_days": 90,
+                "tag": "FORC"
+              },
+              {
+                "level": 1,
+                "name": "pattern",
+                "skill_days": 35,
+                "tag": "PATT"
+              },
+              {
+                "level": 1,
+                "name": "spirit",
+                "skill_days": 30,
+                "tag": "SPIR"
+              },
+              {
+                "level": 1,
+                "name": "gate lore",
+                "skill_days": 30,
+                "tag": "GATE"
+              },
+              {
+                "level": 2,
+                "name": "fire",
+                "skill_days": 90,
+                "tag": "FIRE"
+              },
+              {
+                "level": 3,
+                "name": "combat",
+                "skill_days": 180,
+                "tag": "COMB"
+              },
+              {
+                "level": 1,
+                "name": "necromancy",
+                "skill_days": 30,
+                "tag": "NECR"
+              }
+            ]
+          },
+          "weight": 10
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 35
+          },
+          "description": "Sentinels of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": false,
+            "guard": true,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "goblin",
+              "plural": "goblins",
+              "tag": "GBLN"
+            },
+            {
+              "amount": 605,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Gravewatch",
+          "number": 178,
+          "orders": [
+            {
+              "order": "@GUARD 1"
+            },
+            {
+              "order": "@TAX"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": [
+              {
+                "level": 1,
+                "name": "combat",
+                "skill_days": 30,
+                "tag": "COMB"
+              }
+            ]
+          },
+          "weight": 25
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 15
+          },
+          "description": "Apprentice of the Covenant, seeker of arcane flame",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 23,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Kael the Invoker",
+          "number": 200,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "can_study": [
+              {
+                "name": "fire",
+                "tag": "FIRE"
+              },
+              {
+                "name": "force shield",
+                "tag": "FSHI"
+              },
+              {
+                "name": "energy shield",
+                "tag": "ESHI"
+              }
+            ],
+            "known": [
+              {
+                "level": 1,
+                "name": "force",
+                "skill_days": 60,
+                "tag": "FORC"
+              }
+            ]
+          },
+          "weight": 10
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 15
+          },
+          "description": "Chronicler of shadow and bone",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 23,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Morrith the Pale Scribe",
+          "number": 201,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "can_study": [
+              {
+                "name": "fire",
+                "tag": "FIRE"
+              },
+              {
+                "name": "force shield",
+                "tag": "FSHI"
+              },
+              {
+                "name": "energy shield",
+                "tag": "ESHI"
+              }
+            ],
+            "known": [
+              {
+                "level": 1,
+                "name": "force",
+                "skill_days": 60,
+                "tag": "FORC"
+              }
+            ]
+          },
+          "weight": 10
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 15
+          },
+          "description": "Weaver of twilight enchantments",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "all",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 23,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Valdris the Duskweaver",
+          "number": 202,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "can_study": [
+              {
+                "name": "fire",
+                "tag": "FIRE"
+              },
+              {
+                "name": "force shield",
+                "tag": "FSHI"
+              },
+              {
+                "name": "energy shield",
+                "tag": "ESHI"
+              }
+            ],
+            "known": [
+              {
+                "level": 1,
+                "name": "force",
+                "skill_days": 60,
+                "tag": "FORC"
+              }
+            ]
+          },
+          "weight": 10
+        }
+      ],
+      "wages": {
+        "amount": 12.1,
+        "max": 285
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 29,
+        "y": 11,
+        "z": 1
+      },
+      "entertainment": 64,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 9,
+              "z": 1
+            },
+            "province": "Bangygas",
+            "terrain": "mountain"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Sebe",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Inddul",
+            "terrain": "jungle"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 115,
+            "name": "gnome",
+            "plural": "gnomes",
+            "price": 27,
+            "tag": "GNOM"
+          },
+          {
+            "amount": 23,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 632,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": [
+          {
+            "amount": 124,
+            "name": "grain",
+            "plural": "grain",
+            "price": 20,
+            "tag": "GRAI"
+          },
+          {
+            "amount": 104,
+            "name": "livestock",
+            "plural": "livestock",
+            "price": 23,
+            "tag": "LIVE"
+          },
+          {
+            "amount": 151,
+            "name": "fish",
+            "plural": "fish",
+            "price": 43,
+            "tag": "FISH"
+          }
+        ]
+      },
+      "population": {
+        "amount": 2877,
+        "race": "gnomes"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 10,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 20,
+          "name": "herb",
+          "plural": "herbs",
+          "tag": "HERB"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Inddul",
+      "settlement": {
+        "name": "Casbiandscor",
+        "size": "village"
+      },
+      "tax": 748,
+      "terrain": "jungle",
+      "units": [
+        {
+          "attitude": "neutral",
+          "faction": {
+            "name": "The Guardsmen",
+            "number": 1
+          },
+          "flags": {
+            "avoid": false,
+            "guard": true
+          },
+          "items": [
+            {
+              "amount": 40,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 40,
+              "name": "sword",
+              "plural": "swords",
+              "tag": "SWOR"
+            }
+          ],
+          "name": "City Guard",
+          "number": 9
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 35
+          },
+          "description": "Sentinels of the southern village",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": false,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "gnome",
+              "plural": "gnomes",
+              "tag": "GNOM"
+            },
+            {
+              "amount": 65,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Casbiandscor Watch",
+          "number": 209,
+          "orders": [
+            {
+              "order": "@GUARD 1"
+            },
+            {
+              "order": "@TAX"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": [
+              {
+                "level": 1,
+                "name": "combat",
+                "skill_days": 30,
+                "tag": "COMB"
+              }
+            ]
+          },
+          "weight": 25
+        }
+      ],
+      "wages": {
+        "amount": 11.3,
+        "max": 299
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 30,
+        "y": 12,
+        "z": 1
+      },
+      "entertainment": 13,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 10,
+              "z": 1
+            },
+            "province": "Sebe",
+            "terrain": "forest"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Inddul",
+            "settlement": {
+              "name": "Casbiandscor",
+              "size": "village"
+            },
+            "terrain": "jungle"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 37,
+            "name": "human",
+            "plural": "humans",
+            "price": 35,
+            "tag": "HUMN"
+          },
+          {
+            "amount": 7,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 627,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 925,
+        "race": "humans"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 10,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 10,
+          "name": "iron",
+          "plural": "iron",
+          "tag": "IRON"
+        },
+        {
+          "amount": 10,
+          "name": "stone",
+          "plural": "stone",
+          "tag": "STON"
+        },
+        {
+          "amount": 10,
+          "name": "camel",
+          "plural": "camels",
+          "tag": "CAME"
+        }
+      ],
+      "province": "Awow",
+      "tax": 222,
+      "terrain": "desert",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 7
+          },
+          "description": "Eyes of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": true,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "goblin",
+              "plural": "goblins",
+              "tag": "GBLN"
+            },
+            {
+              "amount": 21,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Veil Scout",
+          "number": 181,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 5
+        }
+      ],
+      "wages": {
+        "amount": 11.2,
+        "max": 121
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 29,
+        "y": 13,
+        "z": 1
+      },
+      "entertainment": 24,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Inddul",
+            "settlement": {
+              "name": "Casbiandscor",
+              "size": "village"
+            },
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 15,
+              "z": 1
+            },
+            "province": "Awow",
+            "settlement": {
+              "name": "Quu'o'ing",
+              "size": "city"
+            },
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 43,
+            "name": "goblin",
+            "plural": "goblins",
+            "price": 29,
+            "tag": "GBLN"
+          },
+          {
+            "amount": 8,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 688,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 1091,
+        "race": "goblins"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 10,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 10,
+          "name": "iron",
+          "plural": "iron",
+          "tag": "IRON"
+        },
+        {
+          "amount": 10,
+          "name": "stone",
+          "plural": "stone",
+          "tag": "STON"
+        }
+      ],
+      "province": "Awow",
+      "tax": 501,
+      "terrain": "desert",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 35
+          },
+          "description": "Desert watchers of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": false,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "goblin",
+              "plural": "goblins",
+              "tag": "GBLN"
+            },
+            {
+              "amount": 55,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Awow Outpost",
+          "number": 210,
+          "orders": [
+            {
+              "order": "@GUARD 1"
+            },
+            {
+              "order": "@TAX"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": [
+              {
+                "level": 1,
+                "name": "combat",
+                "skill_days": 30,
+                "tag": "COMB"
+              }
+            ]
+          },
+          "weight": 25
+        }
+      ],
+      "wages": {
+        "amount": 12.3,
+        "max": 244
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 31,
+        "y": 13,
+        "z": 1
+      },
+      "entertainment": 27,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 11,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 0,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 0,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 15,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 12,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 49,
+            "name": "gnome",
+            "plural": "gnomes",
+            "price": 29,
+            "tag": "GNOM"
+          },
+          {
+            "amount": 9,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 683,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 1232,
+        "race": "gnomes"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 10,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 20,
+          "name": "herb",
+          "plural": "herbs",
+          "tag": "HERB"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Pelsanti",
+      "tax": 542,
+      "terrain": "jungle",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 35
+          },
+          "description": "Jungle sentinels of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": false,
+            "guard": false,
+            "holding": false,
+            "no_aid": false,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 5,
+              "name": "gnome",
+              "plural": "gnomes",
+              "tag": "GNOM"
+            },
+            {
+              "amount": 55,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Pelsanti Vanguard",
+          "number": 211,
+          "orders": [
+            {
+              "order": "@GUARD 1"
+            },
+            {
+              "order": "@TAX"
+            }
+          ],
+          "own_unit": true,
+          "skills": {
+            "known": [
+              {
+                "level": 1,
+                "name": "combat",
+                "skill_days": 30,
+                "tag": "COMB"
+              }
+            ]
+          },
+          "weight": 25
+        }
+      ],
+      "wages": {
+        "amount": 12.2,
+        "max": 255
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 29,
+        "y": 15,
+        "z": 1
+      },
+      "entertainment": 529,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 16,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 29,
+              "y": 17,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 16,
+              "z": 1
+            },
+            "province": "Flealand",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 28,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 27,
+            "name": "pick",
+            "plural": "picks",
+            "price": 103,
+            "tag": "PICK"
+          },
+          {
+            "amount": 52,
+            "name": "stone",
+            "plural": "stone",
+            "price": 52,
+            "tag": "STON"
+          },
+          {
+            "amount": 58,
+            "name": "jewelry",
+            "plural": "jewelry",
+            "price": 211,
+            "tag": "JEWE"
+          },
+          {
+            "amount": 53,
+            "name": "chocolate",
+            "plural": "chocolate",
+            "price": 88,
+            "tag": "CHOC"
+          },
+          {
+            "amount": 392,
+            "name": "goblin",
+            "plural": "goblins",
+            "price": 34,
+            "tag": "GBLN"
+          },
+          {
+            "amount": 78,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 806,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": [
+          {
+            "amount": 126,
+            "name": "grain",
+            "plural": "grain",
+            "price": 20,
+            "tag": "GRAI"
+          },
+          {
+            "amount": 150,
+            "name": "livestock",
+            "plural": "livestock",
+            "price": 24,
+            "tag": "LIVE"
+          },
+          {
+            "amount": 164,
+            "name": "fish",
+            "plural": "fish",
+            "price": 59,
+            "tag": "FISH"
+          },
+          {
+            "amount": 26,
+            "name": "crossbow",
+            "plural": "crossbows",
+            "price": 119,
+            "tag": "XBOW"
+          },
+          {
+            "amount": 36,
+            "name": "axe",
+            "plural": "axes",
+            "price": 87,
+            "tag": "AXE"
+          },
+          {
+            "amount": 20,
+            "name": "bag",
+            "plural": "bags",
+            "price": 106,
+            "tag": "BAG"
+          },
+          {
+            "amount": 30,
+            "name": "longbow",
+            "plural": "longbows",
+            "price": 92,
+            "tag": "LBOW"
+          },
+          {
+            "amount": 45,
+            "name": "pearls",
+            "plural": "pearls",
+            "price": 470,
+            "tag": "PEAR"
+          },
+          {
+            "amount": 64,
+            "name": "perfume",
+            "plural": "perfume",
+            "price": 393,
+            "tag": "PERF"
+          }
+        ]
+      },
+      "population": {
+        "amount": 9814,
+        "race": "goblins"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 10,
+          "name": "livestock",
+          "plural": "livestock",
+          "tag": "LIVE"
+        },
+        {
+          "amount": 10,
+          "name": "iron",
+          "plural": "iron",
+          "tag": "IRON"
+        },
+        {
+          "amount": 10,
+          "name": "stone",
+          "plural": "stone",
+          "tag": "STON"
+        }
+      ],
+      "province": "Awow",
+      "settlement": {
+        "name": "Quu'o'ing",
+        "size": "city"
+      },
+      "tax": 8636,
+      "terrain": "desert",
+      "units": [
+        {
+          "attitude": "neutral",
+          "faction": {
+            "name": "The Guardsmen",
+            "number": 1
+          },
+          "flags": {
+            "avoid": false,
+            "guard": true
+          },
+          "items": [
+            {
+              "amount": 120,
+              "name": "leader",
+              "plural": "leaders",
+              "tag": "LEAD"
+            },
+            {
+              "amount": 120,
+              "name": "sword",
+              "plural": "swords",
+              "tag": "SWOR"
+            }
+          ],
+          "name": "City Guard",
+          "number": 12
+        },
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 7
+          },
+          "description": "Eyes of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": true,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "goblin",
+              "plural": "goblins",
+              "tag": "GBLN"
+            },
+            {
+              "amount": 21,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Dusk Scout",
+          "number": 180,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 5
+        }
+      ],
+      "wages": {
+        "amount": 14.4,
+        "max": 1727
+      }
+    },
+    {
+      "coordinates": {
+        "label": "surface",
+        "x": 31,
+        "y": 15,
+        "z": 1
+      },
+      "entertainment": 28,
+      "exits": [
+        {
+          "direction": "North",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 13,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        },
+        {
+          "direction": "Northeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 0,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southeast",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 0,
+              "y": 16,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "South",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 31,
+              "y": 17,
+              "z": 1
+            },
+            "province": "Atlantis Ocean",
+            "terrain": "ocean"
+          }
+        },
+        {
+          "direction": "Southwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 16,
+              "z": 1
+            },
+            "province": "Awow",
+            "terrain": "desert"
+          }
+        },
+        {
+          "direction": "Northwest",
+          "region": {
+            "coordinates": {
+              "label": "surface",
+              "x": 30,
+              "y": 14,
+              "z": 1
+            },
+            "province": "Pelsanti",
+            "terrain": "jungle"
+          }
+        }
+      ],
+      "markets": {
+        "for_sale": [
+          {
+            "amount": 48,
+            "name": "gnome",
+            "plural": "gnomes",
+            "price": 29,
+            "tag": "GNOM"
+          },
+          {
+            "amount": 9,
+            "name": "leader",
+            "plural": "leaders",
+            "price": 694,
+            "tag": "LEAD"
+          }
+        ],
+        "wanted": []
+      },
+      "population": {
+        "amount": 1215,
+        "race": "gnomes"
+      },
+      "present": true,
+      "products": [
+        {
+          "amount": 20,
+          "name": "grain",
+          "plural": "grain",
+          "tag": "GRAI"
+        },
+        {
+          "amount": 10,
+          "name": "wood",
+          "plural": "wood",
+          "tag": "WOOD"
+        },
+        {
+          "amount": 20,
+          "name": "herb",
+          "plural": "herbs",
+          "tag": "HERB"
+        },
+        {
+          "amount": 10,
+          "name": "fur",
+          "plural": "furs",
+          "tag": "FUR"
+        }
+      ],
+      "province": "Pelsanti",
+      "tax": 583,
+      "terrain": "jungle",
+      "units": [
+        {
+          "capacity": {
+            "flying": 0,
+            "riding": 0,
+            "swimming": 0,
+            "walking": 7
+          },
+          "description": "Eyes of the Covenant",
+          "faction": {
+            "name": "The Covenant of Shadows",
+            "number": 4
+          },
+          "flags": {
+            "avoid": true,
+            "behind": true,
+            "guard": false,
+            "holding": false,
+            "no_aid": true,
+            "no_cross_water": false,
+            "reveal": "faction",
+            "sharing": false,
+            "spoils": "weightless",
+            "taxing": false
+          },
+          "items": [
+            {
+              "amount": 1,
+              "name": "goblin",
+              "plural": "goblins",
+              "tag": "GBLN"
+            },
+            {
+              "amount": 21,
+              "name": "silver",
+              "plural": "silver",
+              "tag": "SILV"
+            }
+          ],
+          "name": "Shade Scout",
+          "number": 179,
+          "orders": [],
+          "own_unit": true,
+          "skills": {
+            "known": []
+          },
+          "weight": 5
+        }
+      ],
+      "wages": {
+        "amount": 12.4,
+        "max": 276
+      }
+    }
+  ],
+  "skill_reports": [
+    {
+      "description": "No skill report.",
+      "level": 2,
+      "name": "fire",
+      "tag": "FIRE"
+    }
+  ],
+  "statistics": [
+    {
+      "amount": 4,
+      "max": 4,
+      "name": "leader",
+      "plural": "leaders",
+      "rank": 1,
+      "tag": "LEAD",
+      "total": 5
+    },
+    {
+      "amount": 10,
+      "max": 10,
+      "name": "gnome",
+      "plural": "gnomes",
+      "rank": 1,
+      "tag": "GNOM",
+      "total": 10
+    },
+    {
+      "amount": 1562,
+      "max": 3133,
+      "name": "silver",
+      "plural": "silver",
+      "rank": 2,
+      "tag": "SILV",
+      "total": 4695
+    },
+    {
+      "amount": 13,
+      "max": 13,
+      "name": "goblin",
+      "plural": "goblins",
+      "rank": 1,
+      "tag": "GBLN",
+      "total": 13
+    }
+  ],
+  "status": {
+    "apprentices": {
+      "allowed": 10,
+      "current": 0,
+      "name": "Apprentice"
+    },
+    "mages": {
+      "allowed": 5,
+      "current": 4
+    },
+    "quartermasters": {
+      "allowed": 2,
+      "current": 0
+    },
+    "regions": {
+      "allowed": 10,
+      "current": 1
+    }
+  },
+  "type": {
+    "magic": 4,
+    "martial": 1
+  },
+  "unclaimed_silver": 4430
+}

@@ -15,6 +15,7 @@ Pipeline: report parsing → game state analysis → strategy → order generati
 - Write unittests for code you create or modify
 - If you create or modify code, run unittest to make sure it works
 - Prefer correctness over guessing
+- When something unexpected happens, find where you were wrong, usually check `rules/` or other sources to find the root of the issue and create a new memory file in `.claude/memory` to make sure this error is not repeated.
 
 ## Writing or executing code
 
@@ -35,6 +36,7 @@ Pipeline: report parsing → game state analysis → strategy → order generati
 - `atlantis-core-engine/` - C/C++ core engine that runs the Atlantis game, only used for references.
 - `client-examples/` - C++ GUI client (Atlantis-Little-Helper) that parses reports and generates orders; read-only reference for game mechanics.
 - `game-examples/` - examples of multiple turns of the previously run Atlantis games.
+- `.claude/memory/` - long term memory based on learnings, load to avoid any errors and learn from previous mistakes
 
 ## Game data format
 

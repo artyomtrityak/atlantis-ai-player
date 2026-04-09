@@ -1,0 +1,9 @@
+- [No rename factions](feedback_no_rename_faction.md) — Only issue NAME faction once; never rename after first naming
+- [Always include all orders](feedback_repeat_orders.md) — @ repeating orders do NOT carry over between turns; every unit needs explicit orders every turn
+- [Always allocate all 5 faction points](feedback_faction_points.md) — issue FACTION martial N magic M (N+M=5) early; use 'martial'/'magic' keywords (not 'war')
+- [Scouts seed garrisons](feedback_scout_garrison_seeding.md) — Always FORM tax garrisons when scouts pass through regions with men for sale
+- [Maximize tax in every region](feedback_tax_maximization.md) — Calculate men needed (economy/$50), FORM secondary units (never BUY into existing COMB units), invest to max each region
+- [Production economics](feedback_production_planning.md) — Production AFTER tax is maxed; TAX is month-long so can't combine; best chain: iron→swords ($90); SELL+PRODUCE same turn works
+- [Focus magic on one deep tree](feedback_magic_focus_one_tree.md) — Only 1 CAST/turn; branching schools wastes study months since you can only use one spell; go deep in NECR→SUSK, not sideways to DEMO
+- [Silver management — taxed silver first](feedback_silver_management.md) — Use on-hand (taxed) silver via GIVE chains; CLAIM only when genuinely insufficient; set up QM routes for cross-region silver transfer
+- [Silver reserve buffer and transfer chains](feedback_silver_reserve.md) — Keep 500+ unclaimed silver at all times; cap CLAIMs at (pool − 500); set up QM or silver-runner unit early to avoid draining pool

@@ -1,0 +1,152 @@
+#atlantis 4 "111"
+
+;*** swamp (30,8) in Taso — base, $653 economy ***
+
+unit 142
+;Seraphel - FIRE 2 complete, now learning SUSK (prereqs: NECR 1 ✓, FORC 2 ✓)
+;Has 650 silver, needs 150 (study+maint), no claim needed
+STUDY SUSK
+
+unit 178
+;Gravewatch - garrison taxing, FORM cohors to max tax ($653 = 13 men needed)
+;Has 605 silver, giving 400 to new unit before tax income
+@GUARD 1
+@TAX
+FORM 11
+  NAME UNIT "Taso Cohors"
+  DESCRIBE UNIT "Reserves of the Covenant"
+  CLAIM 400
+  AVOID 0
+  BEHIND 0
+  BUY 8 GBLN
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+unit 200
+;Kael - FORC 1 (60/90) → complete FORC 2 this turn
+CLAIM 130
+STUDY FORC
+
+unit 201
+;Morrith - FORC 1 (60/90) → complete FORC 2 this turn
+CLAIM 130
+STUDY FORC
+
+unit 202
+;Valdris - FORC 1 (60/90) → complete FORC 2 this turn
+CLAIM 130
+STUDY FORC
+
+;*** jungle (29,11) in Inddul — Casbiandscor village, $748 economy ***
+
+unit 209
+;Casbiandscor Watch - garrison, FORM cohors to max tax ($748 = 15 men needed)
+@GUARD 1
+@TAX
+FORM 12
+  NAME UNIT "Casbiandscor Cohors"
+  DESCRIBE UNIT "Village reserves of the Covenant"
+  CLAIM 480
+  AVOID 0
+  BEHIND 0
+  BUY 10 GNOM
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+;*** desert (30,12) in Awow — $222 economy, skip garrison ***
+
+unit 181
+;Veil Scout - low economy region, continue exploring south to (30,14)
+MOVE S
+
+;*** desert (29,13) in Awow — $501 economy ***
+
+unit 210
+;Awow Outpost - garrison, FORM cohors to max tax ($501 = 11 men needed, 6 new)
+@GUARD 1
+@TAX
+FORM 13
+  NAME UNIT "Awow Cohors"
+  DESCRIBE UNIT "Desert reserves of the Covenant"
+  CLAIM 300
+  AVOID 0
+  BEHIND 0
+  BUY 6 GBLN
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+;*** jungle (31,13) in Pelsanti — $542 economy ***
+
+unit 211
+;Pelsanti Vanguard - garrison, FORM cohors to max tax ($542 = 11 men needed, 6 new)
+@GUARD 1
+@TAX
+FORM 14
+  NAME UNIT "Pelsanti Cohors"
+  DESCRIBE UNIT "Jungle reserves of the Covenant"
+  CLAIM 300
+  AVOID 0
+  BEHIND 0
+  BUY 6 GNOM
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+;*** desert (29,15) in Awow — City Quu'o'ing, $8636 economy! ***
+
+unit 180
+;Dusk Scout - seed garrison at massive city (10 men start), then explore SW to Flealand
+FORM 15
+  NAME UNIT "Quu'o'ing Watch"
+  DESCRIBE UNIT "City sentinels of the Covenant"
+  CLAIM 560
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  BUY 10 GBLN
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+CLAIM 20
+MOVE SW
+
+;*** jungle (31,15) in Pelsanti — $583 economy ***
+
+unit 179
+;Shade Scout - seed garrison, then explore SW to (30,16)
+FORM 16
+  NAME UNIT "Pelsanti Watch"
+  DESCRIBE UNIT "Southern sentinels of the Covenant"
+  CLAIM 260
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  BUY 5 GNOM
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+CLAIM 20
+MOVE SW
+
+#end

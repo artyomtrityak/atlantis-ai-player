@@ -37,12 +37,13 @@ All magic builds on three foundation skills:
 
 | Condition | Study Rate |
 |-----------|-----------|
-| Inside building with mage slots (Fort+) | Normal |
-| Outside / building without mage slots | **Halved** |
+| Any location, studying up to level 2 | **Normal (30 days/month)** |
+| Inside building with mage slots (Fort+), any level | **Normal (30 days/month)** |
+| Outside / no mage slots, studying **above level 2** | **Halved (15 days/month)** |
 
 Study cost: **$100 per month** per person (on top of maintenance).
 
-Buildings with mage slots:
+Buildings with mage slots (enable unhindered study above level 2):
 - Fort / Stockade: 1 mage slot
 - Castle: 2 mage slots
 - Citadel: 3 mage slots

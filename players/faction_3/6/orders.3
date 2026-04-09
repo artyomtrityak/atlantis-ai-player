@@ -1,0 +1,108 @@
+#atlantis 3 "111"
+
+;*** Turn 7: Phase 2 — First full tax turn for all Cohors
+;*** Projected income: ~$5,562 from all tax garrisons + $624 PHEN = ~$6,186/turn
+;*** CLAIM pool depleted (~$20 remaining) — no large investments possible this turn
+;*** Explorator I moves SE to scout (6,10) Cehurst (can't fund garrison at (5,9))
+;*** Legatus: STUDY ILLU (30→60), forms Explorator II to scout N from Rimouth
+;*** (7,15) expansion deferred to turn 8 when Cohors V has ~$850 earned
+
+;*** plain (7,7) in Benwhandab ***
+
+unit 207
+; Praesidium IV (5 gnolls, 204 silver, COMB 1) — continue guard & tax
+@GUARD 1
+@TAX
+
+unit 216
+; Cohors IV (12 gnolls, COMB 1) — first full TAX turn!
+@TAX
+
+;*** forest (6,8) in Cehurst ***
+
+unit 218
+; Praesidium VI (5 centaurs, COMB 1) — fix inherited flags from Explorator I, then guard & tax
+AVOID 0
+BEHIND 0
+NOAID 0
+@GUARD 1
+@TAX
+
+;*** forest (5,9) in Dopitcla ***
+
+unit 176
+; Explorator I (1 centaur, 62 silver) — $62 not enough for garrison (need $72+ for 1 elf + maint)
+; Scout SE to (6,10) Cehurst forest (tax $1,358, need 28 men — garrison deferred to future turn)
+MOVE SE
+
+;*** forest (9,9) in Nafirth ***
+
+unit 191
+; Praesidium II (5 centaurs, 200 silver, COMB 1) — continue guard & tax
+@GUARD 1
+@TAX
+
+unit 214
+; Cohors II (16 wood elves, COMB 1) — first full TAX turn!
+@TAX
+
+;*** forest (9,11) in Cehurst ***
+
+unit 175
+; Praesidium I (5 centaurs, 202 silver, COMB 1) — continue guard & tax
+@GUARD 1
+@TAX
+
+unit 213
+; Cohors I (11 centaurs, COMB 1) — first full TAX turn!
+@TAX
+
+;*** forest (8,12) in Cehurst ***
+
+unit 192
+; Praesidium III (5 centaurs, 208 silver, COMB 1) — continue guard & tax
+@GUARD 1
+@TAX
+
+unit 215
+; Cohors III (14 wood elves, COMB 1) — first full TAX turn!
+@TAX
+
+;*** forest (7,13) in Cehurst, contains Rimouth [city] ***
+
+unit 141
+; Legatus (1 leader, 2699 silver, FORC 2, ILLU 1/30, PHEN 1) — PHEN $624, CLAIM ~$20,
+; STUDY ILLU (30→60; need 90 for ILLU 2, completes turn 8).
+; FORM Explorator II: 1 centaur scout, buys at Rimouth ($82), moves N to (7,11) next turn.
+@CAST phantasmal_entertainment
+CLAIM 200
+STUDY ILLU
+FORM 1
+  NAME UNIT "Explorator II"
+  DESCRIBE UNIT "Scout of the eternal legion"
+  NOAID 1
+  AVOID 1
+  BUY 1 centaurs
+  TURN
+    MOVE N
+  ENDTURN
+END
+GIVE NEW 1 200 silver
+TURN
+  @CAST phantasmal_entertainment
+  CLAIM 200
+  STUDY ILLU
+ENDTURN
+
+;*** plain (7,15) in Anhefom ***
+
+unit 208
+; Praesidium V (5 centaurs, 202 silver, COMB 1) — continue guard & tax
+@GUARD 1
+@TAX
+
+unit 217
+; Cohors V (17 centaurs, COMB 1) — first full TAX turn! Earns ~$850 → funds (7,15) expansion turn 8
+@TAX
+
+#end

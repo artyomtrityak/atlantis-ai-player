@@ -1,0 +1,54 @@
+#atlantis 3 "111"
+
+;*** forest (9,11) in Cehurst ***
+; Turn 2 strategy: Study ILLU (PHEN prereq) at home. No gate-jump —
+; GATE 1 is one-way, too risky. Scout Bosse and Nafirth with new units.
+; Deploy tax garrison locally. Legatus moves to Bosse next turn.
+
+unit 141
+; Legatus (141) - Mage commander
+; Study ILLU (only missing PHEN prereq). Halved rate: 15/30 days.
+; Stay at (9,11) this turn, move to Bosse town (8,10) next turn.
+CLAIM 1000
+STUDY ILLU
+
+; --- Form tax garrison: 5 centaurs, study COMB this turn, GUARD+TAX next ---
+form 1
+  NAME unit "Praesidium I"
+  DESCRIBE unit "Tax garrison of the eternal legion"
+  CLAIM 500
+  BUY 5 CTAU
+  BEHIND 0
+  REVEAL NONE
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+end
+
+; --- Form scout: 1 centaur, move north to explore Nafirth ---
+form 2
+  NAME unit "Explorator I"
+  DESCRIBE unit "Scout of the eternal legion"
+  CLAIM 100
+  BUY 1 CTAU
+  BEHIND 1
+  AVOID 1
+  SPOILS NONE
+  MOVE N
+end
+
+; --- Form scout: 1 centaur, move SW to explore southern Cehurst ---
+form 3
+  NAME unit "Explorator II"
+  DESCRIBE unit "Scout of the eternal legion"
+  CLAIM 100
+  BUY 1 CTAU
+  BEHIND 1
+  AVOID 1
+  SPOILS NONE
+  MOVE SW
+end
+
+#end

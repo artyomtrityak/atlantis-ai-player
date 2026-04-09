@@ -1,0 +1,67 @@
+#atlantis 4 "111"
+
+;*** swamp (30,8) in Taso ***
+; Turn 2 strategy: Study FORC toward level 2 (FIRE 2 prereq).
+; Deploy scouts in all 3 land directions before moving Seraphel.
+; Form tax garrison for income. Stay put until scout reports arrive.
+
+unit 142
+; Seraphel the Unbound (142) - Primary mage
+; FORC 2 path: currently 30/60 days. Halved rate = 15 this turn → 45/60.
+; Stay at base, let scouts map the surroundings.
+CLAIM 300
+AVOID 1
+STUDY FORC
+
+; --- Tax garrison: 5 goblins, study COMB, then GUARD+TAX next turn ---
+form 1
+  NAME unit "Gravewatch"
+  DESCRIBE unit "Sentinels of the Covenant"
+  CLAIM 250
+  BUY 5 GBLN
+  BEHIND 0
+  REVEAL NONE
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+end
+
+; --- Scout SE: swamp (31,9) Taso ---
+form 2
+  NAME unit "Shade Scout"
+  DESCRIBE unit "Eyes of the Covenant"
+  CLAIM 50
+  BUY 1 GBLN
+  BEHIND 1
+  AVOID 1
+  SPOILS NONE
+  MOVE SE
+end
+
+; --- Scout S: forest (30,10) Sebe ---
+form 3
+  NAME unit "Dusk Scout"
+  DESCRIBE unit "Eyes of the Covenant"
+  CLAIM 50
+  BUY 1 GBLN
+  BEHIND 1
+  AVOID 1
+  SPOILS NONE
+  MOVE S
+end
+
+; --- Scout SW: mountain (29,9) Bangygas ---
+form 4
+  NAME unit "Veil Scout"
+  DESCRIBE unit "Eyes of the Covenant"
+  CLAIM 50
+  BUY 1 GBLN
+  BEHIND 1
+  AVOID 1
+  SPOILS NONE
+  MOVE SW
+end
+
+#end

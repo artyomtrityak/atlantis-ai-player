@@ -1,0 +1,182 @@
+#atlantis 3 "111"
+
+;*** Turn 6: Phase 2 + Tax Maximization
+;*** Every taxed region gets a secondary unit to approach max tax extraction.
+;*** CLAIM budget: 300+500+480+310+750+610+700+1600 = $5,250. Unclaimed after: ~$20.
+;*** Next turn projected tax: ~$5,942/turn (up from ~$1,750)
+
+;*** forest (9,11) in Cehurst ***
+
+unit 175
+; Praesidium I - Form Cohors I (11 centaurs) to max $777 tax
+; Has $660. CLAIM 310 → $970. GIVE $968 → $2. TAX $250 → $252. Maint $50 → $202.
+CLAIM 310
+FORM 1
+  NAME UNIT "Cohors I"
+  DESCRIBE UNIT "Tax cohort of the eternal legion"
+  BUY 11 centaurs
+  STUDY COMB
+  turn
+    @TAX
+  endturn
+END
+GIVE NEW 1 968 silver
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (9,9) in Nafirth ***
+
+unit 191
+; Praesidium II - Form Cohors II (16 elves) to max $1,046 tax
+; Has $210. CLAIM 750 → $960. GIVE $960 → $0. TAX $250 → $250. Maint $50 → $200.
+CLAIM 750
+FORM 1
+  NAME UNIT "Cohors II"
+  DESCRIBE UNIT "Tax cohort of the eternal legion"
+  BUY 16 wood_elves
+  STUDY COMB
+  turn
+    @TAX
+  endturn
+END
+GIVE NEW 1 960 silver
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (8,12) in Cehurst ***
+
+unit 192
+; Praesidium III - Form Cohors III (14 elves) to max $912 tax
+; Has $210. CLAIM 610 → $820. GIVE $812 → $8. TAX $250 → $258. Maint $50 → $208.
+CLAIM 610
+FORM 1
+  NAME UNIT "Cohors III"
+  DESCRIBE UNIT "Tax cohort of the eternal legion"
+  BUY 14 wood_elves
+  STUDY COMB
+  turn
+    @TAX
+  endturn
+END
+GIVE NEW 1 812 silver
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** plain (7,7) in Benwhandab ***
+
+unit 207
+; Praesidium IV - Clear flags, form Cohors IV (12 gnolls) to max $846 tax
+; Has $0. CLAIM 700 → $700. GIVE $696 → $4. TAX $250 → $254. Maint $50 → $204.
+BEHIND 0
+NOAID 0
+CLAIM 700
+FORM 1
+  NAME UNIT "Cohors IV"
+  DESCRIBE UNIT "Tax cohort of the eternal legion"
+  BUY 12 gnolls
+  STUDY COMB
+  turn
+    @TAX
+  endturn
+END
+GIVE NEW 1 696 silver
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** plain (7,15) in Anhefom ***
+
+unit 208
+; Praesidium V - Clear flags, form Cohors V (17 centaurs) toward $1,522 tax
+; Has $0. CLAIM 1600 → $1,600. GIVE $1,598 → $2. TAX $250 → $252. Maint $50 → $202.
+; 22 men total → $1,100/turn (72% of max; will expand next turn)
+BEHIND 0
+NOAID 0
+CLAIM 1600
+FORM 1
+  NAME UNIT "Cohors V"
+  DESCRIBE UNIT "Tax cohort of the eternal legion"
+  BUY 17 centaurs
+  STUDY COMB
+  turn
+    @TAX
+  endturn
+END
+GIVE NEW 1 1598 silver
+@GUARD 1
+@TAX
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (7,13) in Cehurst, contains Rimouth [city] ***
+
+unit 141
+; Legatus - PHEN $624 income, complete FORC 2 (70+30=100 > 90 needed)
+; Turn 7: start ILLU toward ILLU 2 for PHEN 2 path
+CLAIM 300
+@CAST phantasmal_entertainment
+STUDY FORC
+turn
+  CLAIM 200
+  @CAST phantasmal_entertainment
+  STUDY ILLU
+endturn
+
+;*** forest (6,8) in Cehurst ***
+
+unit 176
+; Explorator I - Form Praesidium VI (5 centaurs), scout SW to Dopitcla
+; 5 centaurs × $76 = $380 + $50 study + $50 maint = $480
+CLAIM 500
+FORM 1
+  NAME UNIT "Praesidium VI"
+  DESCRIBE UNIT "Tax garrison of the eternal legion"
+  BUY 5 centaurs
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+END
+GIVE NEW 1 480 silver
+NOAID 1
+MOVE SW
+
+;*** mountain (6,14) in Punscepbliss ***
+
+unit 177
+; Explorator II - Form Praesidium VII (8 orcs = max for $387 region), scout S
+; 8 orcs × $37 = $296 + $80 study + $80 maint = $456
+CLAIM 480
+FORM 1
+  NAME UNIT "Praesidium VII"
+  DESCRIBE UNIT "Tax garrison of the eternal legion"
+  BUY 8 orcs
+  STUDY COMB
+  turn
+    @GUARD 1
+    @TAX
+  endturn
+END
+GIVE NEW 1 456 silver
+NOAID 1
+MOVE S
+
+#end

@@ -1,0 +1,96 @@
+#atlantis 4 "111"
+
+;*** swamp (30,8) in Taso ***
+
+unit 142
+;Seraphel the Unbound - FIRE 1 (60/90), complete FIRE 2 this turn
+CLAIM 200
+STUDY FIRE
+
+unit 178
+;Gravewatch - garrison, continue taxing
+@GUARD 1
+@TAX
+
+unit 200
+;Kael the Invoker - FORC 1 (30/90), studying toward FORC 2
+CLAIM 150
+STUDY FORC
+
+unit 201
+;Morrith the Pale Scribe - FORC 1 (30/90), studying toward FORC 2
+CLAIM 150
+STUDY FORC
+
+unit 202
+;Valdris the Duskweaver - FORC 1 (30/90), studying toward FORC 2
+CLAIM 150
+STUDY FORC
+
+;*** jungle (29,11) in Inddul, contains Casbiandscor [village] ***
+
+unit 181
+;Veil Scout - seed garrison at village, then move SE to explore (30,12)
+FORM 8
+  NAME UNIT "Casbiandscor Watch"
+  DESCRIBE UNIT "Sentinels of the southern village"
+  CLAIM 300
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  BUY 5 GNOM
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+CLAIM 20
+NOAID 1
+MOVE SE
+
+;*** desert (29,13) in Awow ***
+
+unit 180
+;Dusk Scout - seed garrison at desert, then move S to city Quu'o'ing
+FORM 9
+  NAME UNIT "Awow Outpost"
+  DESCRIBE UNIT "Desert watchers of the Covenant"
+  CLAIM 300
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  BUY 5 GBLN
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+CLAIM 20
+NOAID 1
+MOVE S
+
+;*** jungle (31,13) in Pelsanti ***
+
+unit 179
+;Shade Scout - seed garrison at jungle, then continue south
+FORM 10
+  NAME UNIT "Pelsanti Vanguard"
+  DESCRIBE UNIT "Jungle sentinels of the Covenant"
+  CLAIM 300
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  BUY 5 GNOM
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+CLAIM 20
+NOAID 1
+MOVE S
+
+#end

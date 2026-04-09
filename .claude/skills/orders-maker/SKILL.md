@@ -17,9 +17,17 @@ The report represents the state of the game, state of the world, at the end of e
 ### 1. Read current turn reports
 
 - When writing orders or trying to understand the game state, always load `rules/README.md` wiki - it has all information about game rules and orders. This will help you understand the game mechanics and how different orders interact with each other, which is crucial for creating effective turn orders.
-- Read current turn's report and game state using `report-parser` skill.
-- Your faction current turn reports are located in `players/faction_<number>/<turn-number>/report.<faction_number>` and `players/faction_<number>/<turn-number>/report.<faction_number>.json`. For example for player number 3, turn 0, you will look for `players/faction_3/0/report.3` and `players/faction_3/0/report.3.json` to read the report for turn 0.
-- Use `report-parser` skill script to load and parse the report data into a structured format that you can easily query for unit statuses, resources, and other relevant information.
+- **ALWAYS** run the report-parser Python script to parse the turn report. Do not read the raw report text directly — the script produces structured JSON that is easier to analyze accurately.
+- Your faction current turn reports are located in `players/faction_<number>/<turn-number>/report.<faction_number>`. For example for player number 3, turn 6, the report is at `players/faction_3/6/report.3`.
+- Run the parser script:
+  ```bash
+  uv run .claude/skills/report-parser/scripts/report_parser.py players/faction_<number>/<turn>/report.<number>
+  ```
+  For example:
+  ```bash
+  uv run .claude/skills/report-parser/scripts/report_parser.py players/faction_3/6/report.3
+  ```
+- Read the JSON output carefully: units (items, skills, flags), regions (tax, population, markets, exits), events (what happened last turn), errors, and battles. This is the authoritative source of truth for the game state.
 
 
 ### 2. Understand faction current playstyle
@@ -43,6 +51,7 @@ Use @tips.md for assroted tips about the playing the game.
 ### 4. Generate new orders
 
 - Load complete orders syntax reference from `orders-reference.md` to ensure that you are using correct syntax and parameters for each order type.
+- Always prefer creating new units and learning new skills over using existing units and skills. This allows more flexible strategy and to avoid issue of loosing skill points when you buy new men into existing unit with skills.
 - Identify what each unit can do based on the current turn report.
 - Check current turn orders template included in the report for the next turn. it is located in `players/faction_<number>/<turn-number>/orders_template.<faction_number>`. For example, for player number 3, turn 0, you will look for `players/faction_3/0/orders_template.3` to find the orders template file for turn 0. Copy this template and use it as a starting point for your orders file, filling in the orders for each unit based on their capabilities and your faction's strategy.
 - Create orders for each existing unit and new units based on the parser report, faction behavior rules, and faction plans and goals.

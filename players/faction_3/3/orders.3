@@ -1,0 +1,61 @@
+#atlantis 3 "111"
+
+;*** forest (9,11) in Cehurst ***
+; Turn 3 strategy: Begin 2-turn march to Rimouth city.
+; Cast PHEN along the way for small income. Allocate all 5 faction points.
+; Praesidium II+III study COMB, then GUARD+TAX via TURN blocks.
+
+unit 141
+; Legatus (141) - Allocate faction points, march to Rimouth
+; CAST PHEN earns ~$42 at (9,11) before moving. Arrive (8,12) end of turn.
+FACTION martial 3 magic 2
+CLAIM 200
+BEHIND 1
+CAST phantasmal_entertainment
+MOVE SW
+turn
+  ; Turn 4: Cast PHEN at (8,12) ~$56, then move to Rimouth
+  CAST phantasmal_entertainment
+  MOVE SW
+endturn
+
+unit 175
+; Praesidium I (175) - Continue guarding and taxing home region (9,11)
+@GUARD 1
+@TAX
+
+;*** forest (9,9) in Nafirth ***
+
+unit 191
+; Praesidium II (191) - Study COMB this turn, then activate GUARD+TAX next turn
+STUDY COMB
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** forest (8,12) in Cehurst ***
+
+unit 192
+; Praesidium III (192) - Study COMB this turn, then activate GUARD+TAX next turn
+STUDY COMB
+turn
+  @GUARD 1
+  @TAX
+endturn
+
+;*** plain (8,8) in Benwhandab ***
+
+unit 176
+; Explorator I (176) - Scout NW deeper into Benwhandab plains
+NOAID 1
+MOVE NW
+
+;*** forest (7,13) in Cehurst, contains Rimouth [city] ***
+
+unit 177
+; Explorator II (177) - Scout south from Rimouth to plain (7,15) Anhefom
+NOAID 1
+MOVE S
+
+#end

@@ -1,0 +1,138 @@
+#atlantis 4 "111"
+
+; *** swamp (30,8) in Taso ***
+
+unit 142
+; Seraphel the Unbound: cast summon skeletons (2 SKEL) + study necromancy toward NECR 2
+CAST Summon_Skeletons
+STUDY NECR
+
+unit 178
+; Gravewatch: guard and tax; give on-hand silver to mages (avoids draining unclaimed pool)
+; $805 on-hand: give 150×3=450 to mages, 355 remaining covers $50 maintenance + next tax income
+@GUARD 1
+@TAX
+GIVE 200 150 SILV
+GIVE 201 150 SILV
+GIVE 202 150 SILV
+
+unit 200
+; Kael the Invoker: study FIRE toward FIRE 1 (silver from Gravewatch, no CLAIM needed)
+STUDY FIRE
+
+unit 201
+; Morrith the Pale Scribe: study FIRE toward FIRE 1 (silver from Gravewatch)
+STUDY FIRE
+
+unit 202
+; Valdris the Duskweaver: study FIRE toward FIRE 1 (silver from Gravewatch)
+STUDY FIRE
+
+unit 220
+; Taso Cohors: guard and tax
+@GUARD 1
+@TAX
+
+; *** jungle (29,11) in Inddul, Casbiandscor village ***
+; City Guard (40 leaders + 40 swords) blocks GUARD and TAX - work for income
+
+unit 209
+; Casbiandscor Watch: attempt guard (blocked), work to cover maintenance
+@GUARD 1
+WORK
+
+unit 221
+; Casbiandscor Cohors: attempt guard (blocked), work to cover maintenance
+@GUARD 1
+WORK
+
+; *** desert (29,13) in Awow ***
+
+unit 210
+; Awow Outpost: guard and tax
+@GUARD 1
+@TAX
+
+unit 222
+; Awow Cohors: guard and tax
+@GUARD 1
+@TAX
+
+; *** jungle (31,13) in Pelsanti ***
+
+unit 211
+; Pelsanti Vanguard: guard and tax
+@GUARD 1
+@TAX
+
+unit 223
+; Pelsanti Cohors: guard and tax
+@GUARD 1
+@TAX
+
+; *** jungle (30,14) in Pelsanti ***
+; Tax $625, 54 gnomes for sale at $29. Form 13-gnome garrison to max tax.
+
+unit 181
+; Veil Scout: form new garrison, then stay
+FORM 17
+  NAME UNIT "Pelsanti Central Watch"
+  DESCRIBE UNIT "Central sentinels of the Covenant"
+  CLAIM 640
+  BUY 13 GNOM
+  AVOID 0
+  BEHIND 0
+  NOAID 0
+  REVEAL FACTION
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+; *** desert (29,15) in Awow, Quu'o'ing city ***
+; City Guard (120 leaders + 120 swords) blocks GUARD and TAX - work for income
+
+unit 224
+; Quu'o'ing Watch: attempt guard (blocked), work to cover maintenance
+@GUARD 1
+WORK
+
+; *** jungle (31,15) in Pelsanti ***
+; 5 gnomes collects only $250 of $584 tax. Form 7-gnome cohors to maximize.
+
+unit 225
+; Pelsanti Watch: guard and tax, form cohors for full tax coverage
+@GUARD 1
+@TAX
+FORM 19
+  NAME UNIT "Pelsanti South Cohors"
+  DESCRIBE UNIT "Southern reserves of the Covenant"
+  CLAIM 350
+  BUY 7 GNOM
+  AVOID 0
+  BEHIND 0
+  REVEAL FACTION
+  STUDY COMB
+  TURN
+    @GUARD 1
+    @TAX
+  ENDTURN
+END
+
+; *** jungle (28,16) in Flealand ***
+; Hydra in bog here - move south to Feybludee (unexplored)
+
+unit 180
+; Dusk Scout: move south to explore Feybludee (28,18)
+MOVE S
+
+; *** desert (30,16) in Awow ***
+; Dead-end surrounded by explored regions/ocean. 2-hex move via Quu'o'ing to Flealand.
+
+unit 179
+; Shade Scout: move NW to Quu'o'ing then SW to Flealand, position for (27,15) next turn
+MOVE NW SW
+
+#end
