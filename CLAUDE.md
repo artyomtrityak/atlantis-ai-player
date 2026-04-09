@@ -11,6 +11,7 @@ Pipeline: report parsing → game state analysis → strategy → order generati
 ## Always do
 
 - Validate everything you produce: orders, code, scripts, etc
+- When writing orders or trying to understand the game state, always load `rules/README.md` wiki - it has all information about game rules and orders
 - Write unittests for code you create or modify
 - If you create or modify code, run unittest to make sure it works
 - Prefer correctness over guessing
@@ -18,10 +19,10 @@ Pipeline: report parsing → game state analysis → strategy → order generati
 ## Writing or executing code
 
 - Main language is python version 3
-- Always before writing, executing any python code or adding dependencies, activate virtual environment `source venv/bin/activate`
+- Use `uv run <script_name>.py` when executing python code
 - Always use pytest when writing tests
 - Always use `mypy <path to file> <arguments>` to check types after any code added or changed
-- Use `pip freeze > requirements.txt` to save new dependencies. Always ask if you want to install new python libraries.
+- Use `uv add <package>` to add new dependencies. Always ask if you want to install new python libraries.
 
 ## Never do
 - Don't guess when there is not enough information - clarify and ask questions

@@ -9,3 +9,5 @@
 - Prefer behind flag for any archers
 
 - Only 1 spell can be set active `COMBAT` spell so do not focus on multiple `COMBAT` spells at once
+
+- Mages (any unit with magic skill) can only have 1 leader inside. Never buy directly men, create new units

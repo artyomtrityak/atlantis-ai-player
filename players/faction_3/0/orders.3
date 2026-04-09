@@ -3,12 +3,14 @@
 ;*** nexus (0,0,nexus) in The Void ***
 
 unit 141
-; Legatus Magnus - COMB 3, GATE 1, FIRE 1 mage-warrior
-NAME FACTION "Legio Prima"
-NAME UNIT "Legatus Magnus"
-DESCRIBE UNIT "First Commander of the Legion"
+; Legatus - Mage commander, exits Nexus via Gate Lore while studying
+NAME unit "Legatus"
+DESCRIBE unit "Legate of the eternal legion"
 CLAIM 500
-COMBAT FIRE
-MOVE 4 IN
+BEHIND 1
+REVEAL faction
+COMBAT fire
+CAST gate_lore random
+STUDY force
 
 #end

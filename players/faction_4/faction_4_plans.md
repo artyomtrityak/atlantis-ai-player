@@ -1,25 +1,35 @@
-# Faction 4 Plans — Obsidian Cabal
+# Faction 4 Plans - The Covenant of Shadows
 
-## Turn 0 — Completed
-
-**Faction named:** "Obsidian Cabal"
-**Unit 142 named:** "Malachar"
+## Turn 0 - Completed
 
 ### Actions taken:
-- Claimed 300 silver (10,250 unclaimed available)
+- Named faction "The Covenant of Shadows"
+- Named unit 142 "Seraphel the Unbound"
+- Claimed 500 silver for expenses
 - Set FIRE as combat spell
-- Studying Demon Lore [DEMO] — first step toward summoning mastery
-- Casting Gate_Lore RANDOM to exit Nexus and begin world exploration
+- Cast GATE_LORE RANDOM to exit Nexus to a random location
+- Studying NECROMANCY (summoning path)
 
-### Rationale:
-- CAST GATE allows both studying and teleporting in the same turn (unlike MOVE)
-- Demon Lore chosen for summoning focus per behavior rules
-- FIRE set as combat spell — unit already has FORC 1 prerequisite and FIRE 1
+### Goals achieved:
+- Exited Nexus via random gate
+- Started summoning skill tree (Necromancy)
 
-## Upcoming priorities
+## Current Plans
 
-1. **On landing**: Assess new region — is it safe? Any monsters nearby?
-2. **Silver**: Continue claiming from unclaimed pool as needed (150/month: 50 maintenance + 100 study)
-3. **Magic progression path**: DEMO → higher demon lore levels for summoning powerful demons
-4. **Secondary skills to consider**: Force Shield, Energy Shield, Spirit Shield for combat survival
-5. **Long-term**: Find a safe settlement, establish a base, eventually summon combat demons for monster hunting
+### Short-term (next 1-3 turns):
+- Continue studying Necromancy to level 2+
+- Explore current region, identify safe area to settle
+- Claim more silver as needed for study costs (100/month) and maintenance (50/month)
+- Scout region for potential tax income or working opportunity
+
+### Mid-term:
+- Reach Necromancy level 2+ to begin summoning undead units
+- Consider studying Demon Lore for additional summoning options
+- Build a small economy unit (if possible) to support silver income
+- Train FIRE to higher levels for combat effectiveness
+
+### Long-term:
+- Build a summoned army of undead or demons
+- Expand to multiple regions once military force is sufficient
+- Hunt monsters for loot once army is strong enough
+- Consider building a tower/fort for protection
